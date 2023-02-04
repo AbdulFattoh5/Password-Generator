@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.2/css/all.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="h">Password Generator</h1>
+            <div class="main">
+                <input type="range" value="8" min="6" max="25" class="slider"
+                    oninput="this.nextElementSibling.value = this.value" id="slider">
+                <output class="out8">8</output>
+            </div>
+            <button class="btn" id="generate">Generate</button> <br>
+            <label class="label">
+                <p>Use symbols</p>
+                <input type="checkbox" checked="checked" id="checkbox">
+            </label>
+            <div class="out">
+                <h5 id="pasword_txt"><span>Click on Generate Button</span></h5>
+                <button class="cpy" id="cpy">
+                    <i class="far fa-copy"></i>
+                </button>
+            </div>
+            <span id="copy_text"></span>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
