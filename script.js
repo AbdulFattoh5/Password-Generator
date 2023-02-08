@@ -6,7 +6,6 @@ const paswd = document.querySelector('#pasword_txt'),
     string = 'ABCDEFGHIKLMNOPQRSTVXYZabcdefghiklmnopqrstvxyz0123456789';
 
 // Generating password
-
 generate.addEventListener('click', function () {
     let password = ''
     let checked = document.querySelector('#checkbox').checked
@@ -24,7 +23,6 @@ generate.addEventListener('click', function () {
 })
 
 // Copy
-
 cpy.addEventListener('click', function () {
     navigator.clipboard.writeText(paswd.innerHTML)
     copy.textContent = 'Copied!'
@@ -101,6 +99,7 @@ function toggleTheme() {
         themeP.style.color = 'black'
         themeicon1.style.filter = 'none'
         themeicon2.style.filter = 'none'
+        cpy.style.color = '#c7cfc6'
     } else if (themeP.innerHTML == 'Light') {
         themeP.innerHTML = 'Dark'
         section.style.background = '#c2dde4'
@@ -127,6 +126,7 @@ function toggleTheme() {
         themeP.style.color = 'white'
         themeicon1.style.filter = 'invert()'
         themeicon2.style.filter = 'invert()'
+        cpy.style.color = '#003a44'
     }
 }
 
