@@ -133,3 +133,9 @@ function toggleTheme() {
 themeBtn.addEventListener('click', function () {
     toggleTheme()
 })
+
+// loading
+window.onload = function () {
+    let preloader = document.getElementById('preloader');
+    preloader.style.display = 'none';
+}
