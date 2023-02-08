@@ -5,12 +5,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PasswordG</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.2/css/all.css">
 </head>
+<!-- <i class="fas fa-sun"></i> -->
 
 <body>
+    <header class="header">
+        <div class="header_wrap">
+            <ul class="menu">
+                <li class="item">
+                    <div class="menu_link">
+                        <h3 class="menu_link_h">PasswordG</h3>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="menu_link">
+                        <span class="link link1">Theme</span>
+                        <button class="theme">
+                            <p class="theme_p">Dark</p>
+                            <img src="./img/dark-theme.svg" alt="" class="theme-toggle-dark themeIcon themeIcon1"
+                                aria-hidden="true">
+                            <img src="./img/light-theme.svg" alt="" class="theme-toggle-light hide-button themeIcon themeIcon2"
+                                aria-hidden="true" focusable="false">
+                        </button>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="menu_link">
+                        <span class="link link2">Other apps</span>
+                        <a href="https://abdulfattoh5.github.io/Panda/"><img src="./img/little_logo.svg" alt=""></a>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="menu_link">
+                        <span class="link link3">Social Media</span>
+                        <div class="media">
+                            <a class="app" href="http://www.instagram.com/abdulfattox55"><i
+                                    class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://t.me/+zr82RZHel2A0OTIy" class="app1 app">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button class="header_burger-btn" id="burger">
+                <span class="header_burger-span1"></span>
+                <span class="header_burger-span2"></span>
+                <span class="header_burger-span3"></span>
+            </button>
+        </div>
+        <div class="header_overlay"></div>
+    </header>
     <section class="section">
         <div class="container">
             <h1 class="h">Password Generator</h1>
@@ -21,7 +70,7 @@
             </div>
             <button class="btn" id="generate">Generate</button> <br>
             <label class="label">
-                <p>Use symbols</p>
+                <p class="p">Use symbols</p>
                 <input type="checkbox" checked="checked" id="checkbox">
             </label>
             <div class="out">
